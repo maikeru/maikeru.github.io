@@ -9,10 +9,10 @@ ssh_port       = "22"
 document_root  = "~/website.com/"
 rsync_delete   = false
 rsync_args     = ""  # Any extra arguments to pass to rsync
-deploy_default = "rsync"
+deploy_default = "push"
 
 # This will be configured for you when you run config_deploy
-deploy_branch  = "gh-pages"
+deploy_branch  = "master"
 
 ## -- Misc Configs -- ##
 
@@ -304,13 +304,17 @@ task :setup_github_pages, :repo do |t, args|
     repo_url = args.repo
   else
     puts "Enter the read/write url for your repository"
-    puts "(For example, 'git@github.com:your_username/your_username.github.com)"
+    puts "(For example, 'git@github.com:your_username/your_username.github.com')"
     repo_url = get_stdin("Repository url: ")
   end
   user = repo_url.match(/:([^\/]+)/)[1]
+  puts "User is #{user}"
   branch = (repo_url.match(/\/[\w-]+\.github\.com/).nil?) ? 'gh-pages' : 'master'
+  puts "Branch is #{branch}"
   project = (branch == 'gh-pages') ? repo_url.match(/\/([^\.]+)/)[1] : ''
+  puts "Project is #{project}"
   unless (`git remote -v` =~ /origin.+?octopress(?:\.git)?/).nil?
+	  puts "pmichael - setting up origin etc"
     # If octopress is still the origin remote (from cloning) rename it to octopress
     system "git remote rename origin octopress"
     if branch == 'master'
@@ -330,6 +334,7 @@ task :setup_github_pages, :repo do |t, args|
   end
   url = "http://#{user}.github.com"
   url += "/#{project}" unless project == ''
+  puts "url is #{url}"
   jekyll_config = IO.read('_config.yml')
   jekyll_config.sub!(/^url:.*$/, "url: #{url}")
   File.open('_config.yml', 'w') do |f|
