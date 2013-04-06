@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://maikeru.github.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
+url: http://maikeru.github.io
+title: Maikeru's Github Blog
+subtitle: because sometimes a clever title just won't do
 author: P. Michael Holland
 simple_search: http://google.com/search
-description:
+description: We shall see...
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
