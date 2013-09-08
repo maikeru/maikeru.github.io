@@ -21,4 +21,7 @@
     {% if site.email %}
     <li><a href="mailto:{{ site.email }}" title="Email"><i class="icon-envelope-alt social-navbar"></i></a></li>
     {% endif %}
+    {% if site.subscribe_rss %}
+    <li><a href="{{ site.subscribe_rss }}" title="{{site.title}}" type="application/atom+xml"><i class="icon-rss-sign social-navbar"></i></a></li>
+    {% endif %}
 </ul>
