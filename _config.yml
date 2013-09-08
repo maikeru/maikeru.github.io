@@ -19,7 +19,15 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+#email:
+
+# For octoflat theme:
+navigation:
+- text: Home
+  url: /index.html
+- text: Habits
+  url: /habits-of-successful-developers/index.html
+
 
 # ----------------------- #
 #    Jekyll & Plugins     #
