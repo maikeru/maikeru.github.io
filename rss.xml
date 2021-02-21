@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Maikeru's Blog]]></title><description><![CDATA[A place where I mostly put notes]]></description><link>https://maikeru.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Feb 2021 17:23:45 GMT</lastBuildDate><item><title><![CDATA[Notes 2021/02/21]]></title><description><![CDATA[Setting up my windows desktop for development and thought I’d take some notes here. First thing of course was to update my ancient Gatsby…]]></description><link>https://maikeru.github.io/2018-02-21-wsl-dev-environment/</link><guid isPermaLink="false">https://maikeru.github.io/2018-02-21-wsl-dev-environment/</guid><pubDate>Sun, 21 Feb 2021 17:38:00 GMT</pubDate><content:encoded>&lt;p&gt;Setting up my windows desktop for development and thought I’d take some notes here. First thing of course was to update my ancient Gatsby install. Now we’re on Gatsby 2.32. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Updating Homebrew]]></title><description><![CDATA[I was installing some dependencies for PaulStretch using
+Homebrew and was getting download errors.
+I thought that maybe Home Brew itself was…]]></description><link>https://maikeru.github.io/2013-12-02-updating-home-brew/</link><guid isPermaLink="false">https://maikeru.github.io/2013-12-02-updating-home-brew/</guid><pubDate>Mon, 02 Dec 2013 21:46:00 GMT</pubDate><content:encoded>&lt;p&gt;I was installing some dependencies for &lt;a href=&quot;https://github.com/paulnasca/paulstretch_cpp&quot;&gt;PaulStretch&lt;/a&gt; using
+&lt;a href=&quot;http://brew.sh&quot;&gt;Homebrew&lt;/a&gt; and was getting download errors.
+I thought that maybe Home Brew itself was out of date so I tried updating it and came across this error:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ brew update
+error: unable to unlink old &lt;span class=&quot;token string&quot;&gt;&apos;.gitignore&apos;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Permission denied&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+error: unable to unlink old &lt;span class=&quot;token string&quot;&gt;&apos;README.md&apos;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Permission denied&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+error: unable to create &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt; SUPPORTERS.md &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Permission denied&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+Checking out files: &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;% &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2135&lt;/span&gt;/2135&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, done.
+Error: Failure &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; executing: &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; pull -q origin refs/heads/master:refs/remotes/origin/master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Turns out its easy enough to fix. I followed the instructions on Stack Overflow
+&lt;a href=&quot;http://stackoverflow.com/questions/14113427/brew-update-failed&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Note: There is an edit about setting permissions towards the end of the top answer which I needed to follow as well, the original answer on its own was not enough.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[First Day of Ruby World 2013]]></title><description><![CDATA[I’m in Matsue-Shi, Shimane-Ken for Ruby World 2013 and it’s been great. This is my first large conference and I didn’t know what to expect…]]></description><link>https://maikeru.github.io/2013-11-21-first-day-of-ruby-world-2013/2013-11-21-first-day-of-ruby-world-2013/</link><guid isPermaLink="false">https://maikeru.github.io/2013-11-21-first-day-of-ruby-world-2013/2013-11-21-first-day-of-ruby-world-2013/</guid><pubDate>Thu, 21 Nov 2013 22:41:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.31645569620254%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEA//EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//aAAwDAQACEAMQAAABka1bvIbhH//EABoQAAIDAQEAAAAAAAAAAAAAAAABAgMREjH/2gAIAQEAAQUC1HouYipio5QhzpP/xAAXEQEAAwAAAAAAAAAAAAAAAAAAEiJh/9oACAEDAQE/AZaq/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAIAQIBAT8BR//EABwQAAEEAwEAAAAAAAAAAAAAAAABERIxAiEiQf/aAAgBAQAGPwJ47KGkdZqeqUf/xAAdEAEAAQMFAAAAAAAAAAAAAAABABEhcTFBYYHR/9oACAEBAAE/ITTZIpYo5lHYcsO2Ed70QD5n/9oADAMBAAIAAwAAABBcL//EABkRAQACAwAAAAAAAAAAAAAAAAEAgVFx8P/aAAgBAwEBPxBJlUd+uf/EABcRAQADAAAAAAAAAAAAAAAAAAEQEUH/2gAIAQIBAT8QsNh//8QAHhABAAICAQUAAAAAAAAAAAAAAQARITFBUYGRocH/2gAIAQEAAT8QYgrZbEqODKzT4+wambRWOoUXzfqOZadVEwDup//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;ruby world 2013 bag&quot;
+        title=&quot;ruby world 2013 bag&quot;
+        src=&quot;/static/80d2c36acc21483b776f01b30ac1ce99/828fb/ruby_world_2013_bag.jpg&quot;
+        srcset=&quot;/static/80d2c36acc21483b776f01b30ac1ce99/ff44c/ruby_world_2013_bag.jpg 158w,
+/static/80d2c36acc21483b776f01b30ac1ce99/a6688/ruby_world_2013_bag.jpg 315w,
+/static/80d2c36acc21483b776f01b30ac1ce99/828fb/ruby_world_2013_bag.jpg 630w,
+/static/80d2c36acc21483b776f01b30ac1ce99/0ede0/ruby_world_2013_bag.jpg 945w,
+/static/80d2c36acc21483b776f01b30ac1ce99/3ac88/ruby_world_2013_bag.jpg 1260w,
+/static/80d2c36acc21483b776f01b30ac1ce99/768c6/ruby_world_2013_bag.jpg 3264w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I’m in Matsue-Shi, Shimane-Ken for &lt;a href=&quot;http://www.rubyworld-conf.org/en/&quot;&gt;Ruby World 2013&lt;/a&gt; and it’s been great. This is my first large conference and I didn’t know what to expect. I need some time to process the experience but I’m just going to throw some random thoughts out here while they are fresh in my mind.&lt;/p&gt;
+&lt;h1&gt;Local Support&lt;/h1&gt;
+&lt;p&gt;Shimane-Ken and Matsue-Shi are really getting behind Ruby in particular and IT in general. There was a big advertisement for the event at the airport and there are apparently Ruby themed Ramen noodles and some Ruby themed Japanese style sweets. A large part of the cost of the conference was also paid for by the local government. I found out later that the local government is trying to get more IT companies into the area with subsidies and cheap office space. (One of the people I talked to at the reception was saying his company is planning to set up an office in Matsue)&lt;/p&gt;
+&lt;p&gt;Here’s Aaron Patterson tweeting about the sign at the airport:&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Found &lt;a href=&quot;https://twitter.com/yukihiro_matz?ref_src=twsrc%5Etfw&quot;&gt;@yukihiro_matz&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/mojombo?ref_src=twsrc%5Etfw&quot;&gt;@mojombo&lt;/a&gt; at the airport. &lt;a href=&quot;http://t.co/WLncFj2xJI&quot;&gt;pic.twitter.com/WLncFj2xJI&lt;/a&gt;&lt;/p&gt;&amp;mdash; Aaron Patterson (@tenderlove) &lt;a href=&quot;https://twitter.com/tenderlove/status/403041785414311936?ref_src=twsrc%5Etfw&quot;&gt;November 20, 2013&lt;/a&gt;&lt;/blockquote&gt;
+&lt;h1&gt;Suits&lt;/h1&gt;
+&lt;p&gt;There are a surprising number of people in suits! It looks like quite a few people have been sent by their companies. Naturally I’m aware that Ruby is used by companies but I don’t remember seeing people in suits in any of the conference videos I’ve seen from overseas. I suspect that this is more of a Japanese thing but who knows? There was a bit more of a formal atmosphere than I’m used to with the smaller local events I’ve attended. Many business cards were exchanged.&lt;/p&gt;
+&lt;h1&gt;Length of Presentations&lt;/h1&gt;
+&lt;p&gt;I actually expected the presentations to be 45 minutes or an hour long but apart from Matz’s keynote they were all fixed at half an hour. This does seem like the right amount of time though as I don’t remember feeling sleepy during any of these presentations (probably because they were all so interesting!)&lt;/p&gt;
+&lt;h1&gt;Famous for Five Minutes&lt;/h1&gt;
+&lt;p&gt;Matz retweeted one of my tweets!&lt;/p&gt;
+&lt;p&gt;I took &lt;a href=&quot;https://www.evernote.com/shard/s54/sh/9cd05cf6-6119-4baa-a1ae-31bd2f23ae34/16638f82bd08ac21c5ad4206d81630de&quot;&gt;notes&lt;/a&gt; during Matz’s keynote presentation and then tweeted a link to them with the #rubyworld hashtag. Lots of people picked up on it and retweeted it until Matz himself retweeted it too!
+Feeling pretty awestruck really.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.65822784810127%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB1UlEQVQoz41Sy47TMBTtZ/AX7PkF/gXxH2hWRSDBhgUaaZZISKzQaFggClPRmebV9JkmTidNk9iJX7HdhNtGjDSgCo6urOtrn3tO4tt78uIqiGLPdXzfdxwnCAJCSHkCVVWOP39Mlj7lvCSk9+j5RYBib+JZlj0ej4GPEOqukr8Axat3fWQNqZAE496zixEmlWKl4JxSyhiroH9JGON1XUsp79cOpmmU1l3ea9v2+4f3/aePk+nYcr3JxJtNAX5RYDhqmqY9jQN5M7WG56+24TKKN+A5SbZgqSKklkIwKjmrCIYVgoIjSh+Qu/ZRGK5Xy/VqNfwx8BeBGyZ+vPPQdoJ2dpi4KIW4XcUZLo+U3+Rj2tzhytnkbpxbQTxJyWCdD6P8OsxvUDGKcUrrqjalNPs/bCujpBYV40mOs5KWXHKluTJSG6FMbfYQzalvtgr7cn2Z3e1iFOGiaP8bB/IyWv+0b2K0WSyW8/kCRQgTwjgXQtz/bZCGR+qieaDsOl8H3xgX+RHAgZfcmwP+rWy0hjFQStVKQSKF7LbdjU7ny1a99PnbuXgzExEzXb0H7WGq8qIAzV2WpWmaZRnkMGdwpLVWSrd78ymgZyP82ib9WzwrBFTA3S8ecdga5R/3dAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;matz retweet screenshot&quot;
+        title=&quot;matz retweet screenshot&quot;
+        src=&quot;/static/e234c025e0c9a627ae8295a69160fd8a/f058b/matz_retweet_screenshot.png&quot;
+        srcset=&quot;/static/e234c025e0c9a627ae8295a69160fd8a/c26ae/matz_retweet_screenshot.png 158w,
+/static/e234c025e0c9a627ae8295a69160fd8a/6bdcf/matz_retweet_screenshot.png 315w,
+/static/e234c025e0c9a627ae8295a69160fd8a/f058b/matz_retweet_screenshot.png 630w,
+/static/e234c025e0c9a627ae8295a69160fd8a/715a3/matz_retweet_screenshot.png 830w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;Reception&lt;/h1&gt;
+&lt;p&gt;There was a reception after the conference finished for the day with some very fancy buffet food and lots and lots of people attending. This was the most difficult part of the day for me as I’m not really comfortable just going up to people and talking to them. I went round the different booths and talked to the people there but the big help for me was when one of the older gentlemen in a suit came up to me and started introducing me to lots of other people. He was from sales and much better than me at keeping the conversation going.&lt;/p&gt;
+&lt;p&gt;That’s all I can think of right now. Lets see how tomorrow goes!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Pair Programming Experiences]]></title><description><![CDATA[So, the last couple of Nishiwaki.rb and Higashi-Nada.rb meetups have been pair programming sessions
+under the title of Pair Programming in…]]></description><link>https://maikeru.github.io/2013-10-27-pair-programming-experiences/</link><guid isPermaLink="false">https://maikeru.github.io/2013-10-27-pair-programming-experiences/</guid><pubDate>Sun, 27 Oct 2013 14:52:00 GMT</pubDate><content:encoded>&lt;p&gt;So, the last couple of Nishiwaki.rb and Higashi-Nada.rb meetups have been pair programming sessions
+under the title of &lt;a href=&quot;http://nishiwaki-higashinadarb.doorkeeper.jp/events/6514&quot;&gt;Pair Programming in Action&lt;/a&gt;.
+Last month was in Ono city (relatively) close to Nishiwaki and this month
+we were in &lt;a href=&quot;http://cahootz.jp/&quot;&gt;Cahootz&lt;/a&gt; in Kobe.&lt;/p&gt;
+&lt;p&gt;For Pair Programming in Action the group divided into pairs of a more experienced rubyist with a less experienced one.
+We then voted on a programming problem to work on so the whole group would be working on the same problem (unlike MokuMoku Kai
+where everyone does something different). Last month we did the Mastermind game used as an example in The RSpec Book and this
+month we did &lt;a href=&quot;http://nabetani.sakura.ne.jp/hena/ord7selectchair/&quot;&gt;ゆっくり座りたい〜&lt;/a&gt; which is a problem about seating order.
+Both problems are presented in a format ideal for Test Driven Development (TDD) with expected outputs for different inputs that
+exercise all the edge cases of each problem. This makes it easy to proceed one step at a time, first writing code that produces
+the correct output for the simplest case and then gradually moving on from there.&lt;/p&gt;
+&lt;p&gt;Pair programming is unsurprisingly a very sociable experience. Two people work together with one person “driving”
+(writing code) and the other “navigating” (watching for mistakes, giving feedback and direction and asking questions).
+You take turns in each role swapping whenever you feel like it. The atmosphere is very different to the MokuMoku Kai meetings
+that we usually do (MokuMoku literally means to do something quietly) with everyone talking at the same time.
+I remember a few occasions when someone tried to address the whole group and we just kept on going anyway (sorry Aki-san!).&lt;/p&gt;
+&lt;p&gt;In each of the Pair Programming in Action sessions we made sure to pair with someone different from before.
+It was interesting to see how much of a difference having a different pair makes. Everyone has a different approach to things
+and a different communication style. From my first pair I learnt a lot about the core ruby libraries and some git commands.
+From my second pair I learnt about some useful tools (tig) and environment settings.&lt;/p&gt;
+&lt;p&gt;One pain point was switching roles. We each used our own laptops rather than working together on one (which would have been
+too cramped and awkward). This meant that when we wanted to switch roles the driver would push their changes to Github and the new
+driver would pull those updates. This is fine if the switch occurs when all tests are passing but sometimes its nice to switch
+in the middle of a problem when one person has an idea that is easiest expressed in code. As a result I’ve started looking into
+remote pair programming.&lt;/p&gt;
+&lt;p&gt;I went into both of the pair programming sessions without any preparation. I’d heard about pair programming before and even done
+some casual pair programming at work but I hadn’t thought about or researched how to make the most of the experience.
+Based on the little research it looks like I might have missed some things - such as the particular roles of the driver
+and navigator and what each is responsible for. I’m looking forward to having another go but in the mean time I think I’ll do
+some reading on the topic:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.wikihow.com/Pair-Program&quot;&gt;How to Pair Program&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remote Pair Programming Resources at &lt;a href=&quot;http://www.pairprogramwith.me/&quot;&gt;PairProgramWith.me&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Ascii Sort]]></title><description><![CDATA[Note: The code described here is that committed to Github on Aug 16, 2013 If you have a look at my Github Repositories you’ll see I’ve added…]]></description><link>https://maikeru.github.io/2013-08-27-ascii-sort/</link><guid isPermaLink="false">https://maikeru.github.io/2013-08-27-ascii-sort/</guid><pubDate>Tue, 27 Aug 2013 22:21:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;Note: The code described here is that committed to Github on Aug 16, 2013&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;If you have a look at my Github Repositories you’ll see I’ve added a new project called &lt;a href=&quot;https://github.com/maikeru/ascii_sort&quot;&gt;Ascii Sort&lt;/a&gt;. This was my project for this months local Ruby Meetup (the Moku Moku Kai I reported on &lt;a href=&quot;/blog/2013/07/27/ruby-moku-moku-kai-2013-slash-07-slash-20/&quot;&gt;last month&lt;/a&gt;). I’m quite happy with how things turned out so I want to talk about it a little.&lt;/p&gt;
+&lt;p&gt;One of the difficulties with Moku Moku Kai is choosing something to implement that can be implemented in the 3 hour coding period. A lot of my early attempts were too ambitious leaving me with little to show the group after the time was up.&lt;/p&gt;
+&lt;p&gt;I settled upon writing a sorting algorithm but that didn’t feel like it was big enough so I decided to also output a visualization of the sort as it progressed to the console.&lt;/p&gt;
+&lt;h2&gt;Bubble Sort&lt;/h2&gt;
+&lt;p&gt;Bubble sort is a simple sorting algorithm that looks at adjacent pairs of items in the list and swaps them if the first item in the pair is bigger than the second, looping around again until the entire list is sorted. Here’s an example of the first pass through a reverse-sorted list.&lt;/p&gt;
+&lt;p&gt;reverse sorted list as a starting point:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;a ####
+b ###
+c ##
+d #&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;a &gt; b so swap them:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;b ###
+a ####
+c ##
+d #&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;a &gt; c so swap them:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;b ###
+c ##
+a ####
+d #&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;and finally a &gt; d. We have reached the end of the list so that’s the end of the first pass&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;b ###
+c ##
+d #
+a ####&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;There’s a more detailed explanation (and nifty animated gif) on &lt;a href=&quot;http://en.wikipedia.org/wiki/Bubble_sort&quot;&gt;wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;The Implementation&lt;/h2&gt;
+&lt;p&gt;I knew I wanted the sorter class to call out to a Listener object after each step of the sort. In the case of bubble-sort, this would mean calling the listener after each a pair of values was assessed but before moving onto the next pair of values.&lt;/p&gt;
+&lt;p&gt;I started off by implementing the sort test-first but couldn’t quite get my head around it. I was trying to think of everything at once: how to implement the sort, what would be the most idiomatic ruby, what would be the best way to write the tests etc. This was too much pressure and, as I mentioned above, there was a time-limit so in the end I implemented the core algorithm first and then went back and fixed the tests.&lt;/p&gt;
+&lt;p&gt;With the BubbleSorter class implemented, the next step was to Implement a visualizer. By this point there was only about half an hour of coding time left. When I implemented the sorting algorithm I had made a simple driver (called runner) to check that things were working as expected. As there wasn’t much time and I wasn’t sure what I was doing I did a quick implementation of a visualization class inside runner. Each number in the partially sorted list is represented as a line of ”#” characters of variable length and the console is cleared and the list redrawn every time a step completes. I even added some color in the last five minutes.&lt;/p&gt;
+&lt;p&gt;Here’s some actual output!!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sort in progress&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 124px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/341d47b3809db1bd6e0e8df908a5bb35/d6e54/ascii_sort_in_progress.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 193.54838709677418%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAnCAIAAACABf9ZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/UlEQVRIx61V62/aVhz1fzrtQ9UtVM0LRkWyvBYaLZ00td2WSRPL0qZdtTVNRygpkBehEPogUAhQCARsbMDvJwSwfV2bpFkSFUKyXV1Z99g+vuee38MQANrJOL3uZUA6QVEMkgo0WdYUGaiqARW1BzIGN+/Zqb9+Zx852IU5ZtHBOe4yi78wL5yioaXrJ6BEWJqfI//8g37soBfmyGeL9JMF2vET82bn0JDTndxqaEA2TisrWrOp6VBTtVYTKEoPsmVFQtENmooQZAwn3uFEBMP8iqr0ZBheWff7B8Kvx8Ovx0Khb96+tQdDY7Juoe7a0exCloSiICGCiPACwrJZkc+Kh/hx3C6KHKSfEAhAa2mgoak1oIoqkDRwqCh1VeYUtdHNMaieEQujBex+Cb2Hln5A0J9RZAZBf0TLc2V4CqntN4y31E6yozzuJIhVknRR+DJOe2naw1IumnYzxFNSVUBX2eeenjbponSF6Cb5oPBwrex2l71/l5aiXKqdG6rWQ55DYcJrjtmmkrenUzPDsaE9EWnnOThW0Z3MNClB5TlFpBQRq2GXrCo9KHBRZalGhWif9xJlCbHvg1FzX3L6Vva3X8GFdXSOLKZ2yZ1XRHCb/5BtG3yZnbX/MKBSMd/fP0jQ7GW3Nciv1l0D1m9rraNOZNDBSUWB49mRfCiJSqN+RdlNFbyjuBwvJDkxzgpxRojR3D4npHkpxvBHsCM5QlCmN8nx91l92nbT9kTOupuxRTNT8awt+mEynp1I5DsbJkoZvpbhpRQvJRghx4t5oZ7iDJhkhSwnwPVmp0xth6qdGIY3umNGSZyFRhBU9XN9FJIkMZPNFYtwAUYOCkX9mssXCvoCQfJtqF8PDg4I6jOxhHiOKZVQDCujWFlfVCplrFzRbxgQRcsGqhZhRJQkYCgB/1+GMTT18MHiptf9wuN1rricrtWlp0u+1ZWXaxvLz//R4fLSM4/b6dvafvT4SZVgTouHtn0rX3x5bdBsHhgc7uv72jYycuPmkOlm//Cw2WQyWa23BoYs1003rBbzta9MjNg4Q65iKM7gFZJEyuQBDKMITAk0WsURDC/AcAkpMhKLVHAYrcKl0jnPID0KTbwK6rwsiC2Wa5KkTJGgpsNai9bbDCnTlAHFeouiGgTeIIlPjdJoBjuR/uupmdHUzNjehCV1Zzo+ak5+Z03PTiTGLcnvJxNj1r1JS/rOZGLCmpoe2b9/V/v0+4Rq6QgT3CYCm/jmetXrIgM+vTFUN3z41nrV5yb9HjIcrKx58E0fvuHB11a4bP6kK0OFYnHL76/X61ep50AgYLffZmj6XzI493c8C08bFgqFZmdnGYa5ys6xWGx+fp7n+SuQPwKDuXlX5B+A+gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;ascii sort in progress&quot;
+        title=&quot;ascii sort in progress&quot;
+        src=&quot;/static/341d47b3809db1bd6e0e8df908a5bb35/d6e54/ascii_sort_in_progress.png&quot;
+        srcset=&quot;/static/341d47b3809db1bd6e0e8df908a5bb35/d6e54/ascii_sort_in_progress.png 124w&quot;
+        sizes=&quot;(max-width: 124px) 100vw, 124px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The finished sort&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 142px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8ead647fa5623d48852e10deff24277c/0d76a/ascii_sort_complete.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 159.85915492957747%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgCAIAAACdAM/hAAAACXBIWXMAAAsTAAALEwEAmpwYAAACuklEQVQ4y6WV/W/SQBjH79/WTP1lCeIcgzrktVCgMN2MbtEtM3POmYUXhy8LKJgNS1ugpYW+8FY66NVrFxNDHJbtyfPD59J8e9/n7p47AO0wbxTAvEWA+nn1W7mK6Abzg+X7d4I4iciYThcW86KgDnVr5hvYHjM1tXzWPS1MR9rC4loMK7uWKj63rk/ggtMDqPShPIByz7QXbTHxxbCak4tZ6fSQP6oNKLt4p78A4Ysn90oP3BXX3dLSSeeLtezQcCoeGppiXCqT/mDaX3jBetJ3nsvzrTzXzHKtoxZXcF44KJcD+cJysegufl4pfHKdlXB74QxnZxsOoalBqEID2R6bpr6A7fOSnvuo5Y61k8NR/sPoNDs6Phg0GxMnGwdexCW/u4N7O1FvN+zthjyddVenxTkTjyfmaGIONajrEHWGxWPH+zz82pcPZOmd3N2XpLeSciTLh0pnt6vmVNPe9LldRfL0WoN92kTJoMQsYH2suC9bzueLTdQOqEANmrp9LhEj22NHZxQUu9JOs/26JbxstN80+D1OQPwKMctvM5x0OZ3T6mCjxnp+UIFqHaW/SvsqlL9CBX6iIe2t1LUpnCc2ILxElg04tS8x5Brx5A//x7aqyIIdfFtot9uiKAqCaLMgIuDbitK77noErVaTqtMMCpalGRahNWAZm1mKotRe/1rxre7tg72dCB6LxohAOIpHQkQiiceJYBiPhkMEEY8nksFQNBKNXXXZzPSAiIVdD1cwnxfDMN+6/9HK6prHgxBD/HjNs7rq83rCcfKffQquNsKw8yr+ZvRtzlMAxPe7zEaCfU7SaYJO442tNLtJ0pkETeLsZordSjOZJJ2OUYlg74KasQ6a25lfRITO4PRGvP4sRSXxOhlFTCNOxeqpiMWbZA0PaoI4KzbtSqBhmCjtEqwnd4av6ezfrzwDot1Ul8IAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;ascii sort complete&quot;
+        title=&quot;ascii sort complete&quot;
+        src=&quot;/static/8ead647fa5623d48852e10deff24277c/0d76a/ascii_sort_complete.png&quot;
+        srcset=&quot;/static/8ead647fa5623d48852e10deff24277c/0d76a/ascii_sort_complete.png 142w&quot;
+        sizes=&quot;(max-width: 142px) 100vw, 142px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Post-Mortem&lt;/h2&gt;
+&lt;p&gt;Now that I’ve had some time to think about it (and having implemented it once already) I would go about things differently if I was starting again from scratch. First I’d just focus on the algorithm implementation, proceeding test-first by writing three tests:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;An already sorted list&lt;/li&gt;
+&lt;li&gt;A reverse sorted list&lt;/li&gt;
+&lt;li&gt;A “random” list&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Each case would check that the final result of the algorithm is a sorted list. Once the implementation was complete and the tests all passed I’d move onto the listener functionality. This would need a separate test using a mock-listener object to record the data passed in each time the listener was called. If I know the starting list I can predict exactly what the partially sorted list will be at each step so I can test that. The main point of this test would be to verify that the listener was being called at each step rather than the details of the sorting algorithm. To keep that focus the test would use a short input list so that the listener would be called only a few times.&lt;/p&gt;
+&lt;p&gt;For the visualization class I think writing it the way I did was useful as a prototyping exercise so I’m not sure I would change that approach. However, it is just a prototype and the next step is to rewrite it in it’s own file and driven by tests.&lt;/p&gt;
+&lt;h2&gt;What Next?&lt;/h2&gt;
+&lt;p&gt;Next I want to test drive some(?) different visualization classes with different visualizations of the same sort algorithm. Once that’s done I’d like to add at least one more sorting algorithm. Finally, with multiple sorters and visualizers available to combine together I want to make a command-line program with switches to select which visualizer/sorter combination to use.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Ruby Moku Moku Kai 2013/07/20]]></title><description><![CDATA[Last weekend I attended the Nishiwaki.rb and Higashinada.rb Moku Moku Kai, held this month in Higashinada Kuminkan in Higashinada, Kobe…]]></description><link>https://maikeru.github.io/2013-07-27-ruby-moku-moku-kai-2013-slash-07-slash-20/</link><guid isPermaLink="false">https://maikeru.github.io/2013-07-27-ruby-moku-moku-kai-2013-slash-07-slash-20/</guid><pubDate>Sat, 27 Jul 2013 18:27:00 GMT</pubDate><content:encoded>&lt;p&gt;Last weekend I attended the Nishiwaki.rb and Higashinada.rb Moku Moku Kai, held this month in Higashinada Kuminkan in Higashinada, Kobe.&lt;/p&gt;
+&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;Moku Moku Kai has been running since March with this being the fifth meeting and the fourth time I’ve attended. The format is simple, each attendee introduces what they are going to work on (usually development but sometimes research), they work on it for 2-3 hours and then introduce what they worked on with questions and occasional code review.&lt;/p&gt;
+&lt;p&gt;This is quite different from the majority of programming meetups in the area which seem to be either study groups or follow a presentation format. The focus of Moku Moku Kai is on learning through doing and feedback from fellow developers — something which no amount of book-learning can provide.&lt;/p&gt;
+&lt;p&gt;For a long time I’ve not had much exposure to developers outside of my own company, I did attend a few of the local presentation oriented groups but my own intravertedness combined with the format meant that I didn’t really connect with anyone there. The Moku Moku Kai has more interaction thanks to the small group size and the emphasis on feedback. It also has fairly active discussions in a private youroom group and post-meeting food and drinks, all of which contribute to a friendly atmosphere. A wide range of people attend, we have freelancers, startup founders, university researchers and salarymen who may or may not use Ruby in their work but everyone is focused on improving their Ruby skills.&lt;/p&gt;
+&lt;h2&gt;What I worked on&lt;/h2&gt;
+&lt;p&gt;I did some development on my &lt;a href=&quot;https://github.com/maikeru/tag_parser&quot;&gt;tag_parser&lt;/a&gt; project. This is a library for handling a simple message format I use at work. I started it when I hit a wall with what I could do with regular expressions. These were fine on a case-by-case basis but coming up with something general that would cover all the edge cases started getting hairy. I had heard about using state-machines for message parsing and knew about the &lt;a href=&quot;http://www.complang.org/ragel/&quot;&gt;Ragel&lt;/a&gt; state-machine generator from an &lt;a href=&quot;http://www.zedshaw.com/essays/ragel_state_charts.html&quot;&gt;essay&lt;/a&gt; by Zed Shaw. tag_parser uses Ragel to generate a tokenizer with some tests and surrounding code in Ruby.&lt;/p&gt;
+&lt;h2&gt;Finishing up&lt;/h2&gt;
+&lt;p&gt;After everyone had finished presenting what they did we went on to a restaurant to eat and talk technical things. This is probably my favourite part of the event. I like hearing what everyone is up to and sometimes we have quite technical discussions.&lt;/p&gt;
+&lt;p&gt;If anyone is interested in joining the next MokuMoku Kai keep an eye out on &lt;a href=&quot;http://nishiwaki-higashinadarb.doorkeeper.jp/&quot;&gt;Doorkeeper&lt;/a&gt;. The events are in Japanese so it might be hard to participate if you don’t speak the language but its worth a try if you’re interested and I’ll do my best to help with any language problems.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Minitest with Multiple Test Files]]></title><description><![CDATA[I started using Minitest for the Game of Life code kata.
+I like how simple minitest is - you can do anything with assert and with a…]]></description><link>https://maikeru.github.io/2013-04-29-minitest-with-multiple-test-files/</link><guid isPermaLink="false">https://maikeru.github.io/2013-04-29-minitest-with-multiple-test-files/</guid><pubDate>Mon, 29 Apr 2013 11:31:00 GMT</pubDate><content:encoded>&lt;p&gt;I started using &lt;a href=&quot;https://github.com/seattlerb/minitest&quot;&gt;Minitest&lt;/a&gt; for the &lt;a href=&quot;https://github.com/maikeru/Kata-s-and-Puzzles-in-Ruby/tree/master/game-of-life&quot;&gt;Game of Life&lt;/a&gt; code kata.
+I like how simple minitest is - you can do anything with assert and with a &lt;a href=&quot;http://mattsears.com/articles/2011/12/10/minitest-quick-reference&quot;&gt;cheatsheet&lt;/a&gt; its easy to write tests however you like. I now have a grand total of two test files and would like to run them both. So far I’ve been running tests like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ruby tests/name_of_my_test.rb&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But this only works with single files. The obvious next step:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ruby tests/*.rb&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;doesn’t work as ruby will only take one file as an argument.
+The top search result lead me to &lt;a href=&quot;http://rake.rubyforge.org/classes/Rake/TestTask.html&quot;&gt;Rake::TestTask&lt;/a&gt;.
+This was the first time for me to write a rakefile and I’m not very experienced with Ruby so there were a few hiccups along the way. My final working rakefile looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ruby&quot;&gt;&lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;rake/testtask&apos;&lt;/span&gt;
+
+task default&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;token constant&quot;&gt;Rake&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;TestTask&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;t&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+  t&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;libs &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;tests&quot;&lt;/span&gt;
+  t&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;test_files &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;FileList&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;tests/*tests.rb&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  t&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;verbose &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Installing POW]]></title><description><![CDATA[This is more just a reminder to myself than anything. To help out with rails development I’m going to try out POW. POW is a tool for Mac for…]]></description><link>https://maikeru.github.io/2013-04-07-reminder-pow/</link><guid isPermaLink="false">https://maikeru.github.io/2013-04-07-reminder-pow/</guid><pubDate>Sun, 07 Apr 2013 08:59:00 GMT</pubDate><content:encoded>&lt;p&gt;This is more just a reminder to myself than anything. To help out with rails development I’m going to try out &lt;a href=&quot;http://pow.cx/&quot;&gt;POW&lt;/a&gt;. POW is a tool for Mac for running local instances of webapps on a Rack server with a meaningful url rather than localhost:xxxx.&lt;/p&gt;
+&lt;p&gt;How to get it:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; get.pow.cx &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sh&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Which gives me:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;Ps-MacBook-Pro:Development Owner$ &lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; get.pow.cx &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sh&lt;/span&gt;
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+&lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;  &lt;span class=&quot;token number&quot;&gt;6887&lt;/span&gt;  &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;  &lt;span class=&quot;token number&quot;&gt;6887&lt;/span&gt;    &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;     &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;   &lt;span class=&quot;token number&quot;&gt;5802&lt;/span&gt;      &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;  &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;:00:01  &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;:00:01 --:--:-- &lt;span class=&quot;token number&quot;&gt;14498&lt;/span&gt;
+*** Installing Pow &lt;span class=&quot;token number&quot;&gt;0.4&lt;/span&gt;.0&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+*** Installing &lt;span class=&quot;token builtin class-name&quot;&gt;local&lt;/span&gt; configuration files&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+/Users/Owner/Library/LaunchAgents/cx.pow.powd.plist
+*** Installing system configuration files as root&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+Password:
+/etc/resolver/dev
+/Library/LaunchDaemons/cx.pow.firewall.plist
+*** Starting the Pow server&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+*** Performing self-test&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+*** Installed
+
+For troubleshooting instructions, please see the Pow wiki:
+https://github.com/37signals/pow/wiki/Troubleshooting
+
+To uninstall Pow, &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; get.pow.cx/uninstall.sh &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sh&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To set up an app to run with POW, make a symlink to it, like so:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; ~/.pow
+$ &lt;span class=&quot;token function&quot;&gt;ln&lt;/span&gt; -s /path/to/myapp name_to_use_as_uri&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The app should now be accesible via &lt;code class=&quot;language-text&quot;&gt;http://name_to_use_as_uri.dev&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I didn’t have a suitable app available so made a quick rails app:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;Ps-MacBook-Pro:ruby Owner$ rails new arfarfarf
+      create  
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/images/rails.png
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.r
+      &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then created the symlink like so:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;Ps-MacBook-Pro:~ Owner$ &lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; .pow
+Ps-MacBook-Pro:.pow Owner$ &lt;span class=&quot;token function&quot;&gt;ln&lt;/span&gt; -s /Users/Owner/Development/ruby/arfarfarf/ arf&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And was able to access the site immediately in my browser at &lt;code class=&quot;language-text&quot;&gt;http://arf.dev&lt;/code&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[testing!]]></title><description><![CDATA[Testing out Octopress and github.pages. Lets hope this works!]]></description><link>https://maikeru.github.io/2013-04-06-testing/</link><guid isPermaLink="false">https://maikeru.github.io/2013-04-06-testing/</guid><pubDate>Sat, 06 Apr 2013 16:52:00 GMT</pubDate><content:encoded>&lt;p&gt;Testing out Octopress and github.pages. Lets hope this works!&lt;/p&gt;</content:encoded></item></channel></rss>
