@@ -1,0 +1,13 @@
+---
+path: "/2013/04/06/testing"
+layout: post
+title: "testing!"
+date: "2013-04-06T16:52:00.000Z"
+comments: true
+categories: 
+- octopress
+- not_useful
+---
+Testing out Octopress and github.pages. Lets hope this works!
+
+

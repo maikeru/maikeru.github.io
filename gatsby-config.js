@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Maikeru's Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `P. Michael Holland`,
+      summary: `developer of software.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A place where I mostly put notes`,
+    siteUrl: `https://maikeru.github.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `maikeruhorando`,
+      github: 'http://github.com/maikeru',
     },
   },
   plugins: [
@@ -70,6 +71,25 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-gravatar`,
+      options: {
+        // Required.
+        // A list of emails to create URLs for.
+        emails: [
+          {
+            email: `maikeru.horando@gmail.com`,
+          }
+        ],
+
+        // Optional.
+        // No query string is passed to gravatar by default.
+        // But you can add your gravatar query parameters here.
+        // See https://en.gravatar.com/site/implement/images/
+        // If this is set, it will be the default for `emails` (see above) with no `query` options.
+        query: `?size=64&m=dp`
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
