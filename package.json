@@ -1,41 +1,42 @@
 {
   "name": "maikeru.github.io",
   "private": true,
-  "description": "My blog",
+  "description": "Notes and things I've done",
   "version": "0.1.0",
   "author": "P. Michael Holland <maikeru.horando@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/maikeru/maikeru.github.io/issues"
   },
   "dependencies": {
-    "@fontsource-variable/montserrat": "^5.0.4",
-    "@fontsource/merriweather": "^5.0.3",
-    "gatsby": "^5.11.0",
-    "gatsby-plugin-feed": "^5.11.0",
-    "gatsby-plugin-image": "^3.11.0",
-    "gatsby-plugin-manifest": "^5.11.0",
-    "gatsby-plugin-sharp": "^5.11.0",
-    "gatsby-remark-images": "^7.11.0",
-    "gatsby-remark-prismjs": "^7.11.0",
-    "gatsby-remark-responsive-iframe": "^6.11.1",
-    "gatsby-source-filesystem": "^5.11.0",
-    "gatsby-transformer-remark": "^6.11.0",
-    "gatsby-transformer-sharp": "^5.11.0",
-    "prismjs": "^1.29.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "@fontsource-variable/montserrat": "^5.3.0",
+    "@fontsource/merriweather": "^5.3.0",
+    "gatsby": "^5.16.1",
+    "gatsby-plugin-feed": "^5.16.0",
+    "gatsby-plugin-image": "^3.16.0",
+    "gatsby-plugin-manifest": "^5.16.0",
+    "gatsby-plugin-sharp": "^5.16.0",
+    "gatsby-remark-images": "^7.16.0",
+    "gatsby-remark-prismjs": "^7.16.0",
+    "gatsby-remark-responsive-iframe": "^6.16.0",
+    "gatsby-source-filesystem": "^5.16.0",
+    "gatsby-transformer-remark": "^6.16.0",
+    "gatsby-transformer-sharp": "^5.16.0",
+    "prismjs": "^1.30.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "prettier": "^2.8.8"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://maikeru.github.io/",
   "keywords": [
+    "blog",
     "gatsby"
   ],
   "license": "0BSD",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/maikeru/maikeru.github.io.git"
   },
   "scripts": {
     "build": "gatsby build",
@@ -50,5 +51,11 @@
     "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
       "react": "^18.2.0"
     }
-  }
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp"
+    ]
+  },
+  "packageManager": "pnpm@10.8.1+sha512.c50088ba998c67b8ca8c99df8a5e02fd2ae2e2b29aaf238feaa9e124248d3f48f9fb6db2424949ff901cffbb5e0f0cc1ad6aedb602cd29450751d11c35023677"
 }
