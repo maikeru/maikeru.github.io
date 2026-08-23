@@ -47,15 +47,23 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "overrides": {
-    "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
-      "react": "^18.2.0"
-    }
-  },
   "pnpm": {
     "onlyBuiltDependencies": [
       "sharp"
-    ]
+    ],
+    "overrides": {
+      "cookie": "0.7.2",
+      "file-type": "21.3.2",
+      "immutable": "4.3.9",
+      "lodash": "4.18.0",
+      "path-to-regexp": "0.1.13",
+      "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825>react": "^18.2.0",
+      "serialize-javascript": "7.0.5",
+      "sharp": "0.35.0",
+      "tmp": "0.2.7",
+      "uuid": "11.1.1",
+      "webpack": "5.104.1"
+    }
   },
   "packageManager": "pnpm@10.8.1+sha512.c50088ba998c67b8ca8c99df8a5e02fd2ae2e2b29aaf238feaa9e124248d3f48f9fb6db2424949ff901cffbb5e0f0cc1ad6aedb602cd29450751d11c35023677"
 }
